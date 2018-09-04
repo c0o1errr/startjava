@@ -2,11 +2,11 @@ public class Calculator {
 
 	public static void main(String[] args) {
 		
-		int firstNumber = 1;
+		int firstNumber = 2;
 		int secondNumber = 5;
-		char mathOperation = '%';
+		char mathOperation = '^';
 
-		if (mathOperation== '+'){
+		if (mathOperation == '+'){
 			System.out.println(firstNumber + secondNumber);
 		} else if (mathOperation == '-') {
 			System.out.println(firstNumber - secondNumber);
@@ -15,12 +15,12 @@ public class Calculator {
 		} else if (mathOperation == '/') {
 			System.out.println(firstNumber / secondNumber);
 		} else if (mathOperation == '^') {
-			if(secondNumber == 0){
+			/*if(secondNumber == 0){
 				System.out.println(1);
-			}
+			}*/
 			int result = 1;
-			for (int i=0; i < secondNumber; i++) {
-				result = result *firstNumber;
+			for (int i = 0; i < secondNumber; i++) {
+				result = result * firstNumber;
 				System.out.println(result);
 			}
 		} else if (mathOperation == '%') {
