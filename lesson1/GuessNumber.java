@@ -1,18 +1,18 @@
 public class GuessNumber {
     public static void main (String [] args) {
-        int PlayerNumber = 124;
-        int ComputerNumber = 214;
+        int playerNumber = 220;
+        int computerNumber = 214;
 
-        while (PlayerNumber != ComputerNumber) {
-            if (PlayerNumber > ComputerNumber) {
-                int guess = PlayerNumber--;
-                System.out.println(" Number more " + guess);
-            } else if  (PlayerNumber < ComputerNumber) {
-                int guess = PlayerNumber++;
-                System.out.println(" Number less " + guess);
+        while (playerNumber != computerNumber) {
+            if (playerNumber > computerNumber) {
+                playerNumber--;   
+                System.out.println(" Number more " + playerNumber);                               
+            } else if  (playerNumber < computerNumber) {
+                playerNumber++;
+                System.out.println(" Number less " + playerNumber);
             }           
             
         }
-        System.out.println(" Right! Guessed number = " + ComputerNumber);
+        System.out.println(" Right! Guessed number = " + computerNumber);
     }
 }
