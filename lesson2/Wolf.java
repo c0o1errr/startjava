@@ -43,27 +43,27 @@ public class Wolf {
 
 	void setAge(int age){
 		if ( age > 8 ) {
-			System.out.println("Неккоректный возраст");
+			System.out.println("Incorrect age");
 		} else {
 		this.age = age;
 		}
 	}
 
 	public void move() {
-		System.out.println("Иду на 8 шагов");
+		System.out.println("I go on 8 steps");
 	}
 
 	public boolean sit() {
-		System.out.println("Сижу");
+		System.out.println("I'm sitting");
 		return true;
 	}
 
 	public void run() {
-		System.out.println("Бегу кусать!");
+		System.out.println("I'm running");
 	}
 
 	public String useHawl() {
-		return ("уууу");
+		return ("yyyyy");
 	}
 
 }
