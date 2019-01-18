@@ -1,19 +1,15 @@
 public class Wolf {
-
-	private String nameWolf = "Бублик";
-	private String sex = "male";
-	private String color = "grey";
-	private float weight = 12.5f;
-	private int age = 5;
+	private String nameWolf;
+	private String sex;
+	private String color;
+	private float weight;
+	private int age; 	
 
 	public String getNameWolf() {
 		return nameWolf;
 	}
 
 	void setNameWolf(String nameWolf) {
-		if (nameWolf == "котенок") {
-			System.out.println ( " Волк не котенок");
-		} else {
 		this.nameWolf = nameWolf;
 	}
 
@@ -29,44 +25,40 @@ public class Wolf {
 		return color;
 	}
 
-	void setColor (String color){
+	void setColor(String color) {
 		this.color = color;
 	}
 
-	public getWeight() {
+	public float getWeight(){
 		return weight;
-
 	}
 
 	void setWeight(float weight){
 		this.weight = weight;
 	}
 
-	public int getAge(){
+	public int getAge() {
 		return age;
 	}
 
-	void setAge( int age) {
-		if (age > 8) {
-			System.out.println("Некорретный возраст");
+	void setAge(int age){
+		if ( age > 8 ) {
+			System.out.println("Неккоректный возраст");
 		} else {
 		this.age = age;
+		}
 	}
 
-
-
-
-	
-	public void move () {
+	public void move() {
 		System.out.println("Иду на 8 шагов");
 	}
 
-	public boolean sit () {
+	public boolean sit() {
 		System.out.println("Сижу");
 		return true;
 	}
 
-	public void run () {
+	public void run() {
 		System.out.println("Бегу кусать!");
 	}
 
