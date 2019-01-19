@@ -3,22 +3,22 @@ import java.util.Scanner;
 public class CalCulatorTest {
 	
 	public static void main (String [] args) {
-
-		Scanner reader = new Scanner(System.in);
-   		 System.out.println("Введите первое число: " + first);
-   		 System.out.println("Введите второе число: " + second);
-
-    	int first = k.nextInt();
-    	int second = k.nextInt();
-
-    	System.out.print("Введите знак математической операции: (+, -, *, /): " + operator);
-        char operator = reader.next().charAt(0);
-
-		Calculator operationOne = new Calculator();
+		// Считываю введенные числа и передаю через сеттер
+		Scanner scan = new Scanner(System.in);	
+		Calculator firstNumber = new Calculator();	
+		System.out.print("Inser first number: ");
+		firstNumber.setFirst(int firstNumber = scan.nextInt());
 		
-		operationOne.calculating();
-		//System.out.println("Результат = " + operationOne.calculating());
+		Calculator mathOperator = new Calculator();		
+		System.out.print("Enter the sign of the matematical operation: (+, -, *, /): ");		
+        mathOperator.setOperator(char mathOperator = scan.next().charAt(0));  
 
-		
+        Calculator secondNumber = new Calculator();      
+        System.out.print("Insert second number: ");
+		secondNumber.setSecond(int secondNumber = scan.nextInt());	
+
+		Calculator finish = new Calculator();
+		System.out.println("Result = " + finish.calculate());
+
 	}
 } 
