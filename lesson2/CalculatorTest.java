@@ -17,7 +17,7 @@ public class CalculatorTest {
         	System.out.print("Insert second number: " + calculatorOne.getSecond());
 		calculatorOne.setSecond(scan.nextInt());
 
-		System.out.println("Результаты подсчетов = " + calculatorOne.calculate());
+		System.out.println("Counting results = " + calculatorOne.calculate());
 
 	}
 } 
