@@ -1,24 +1,22 @@
 import java.util.Scanner;
 
-public class CalCulatorTest {
+public class CalculatorTest {
 	
 	public static void main (String [] args) {
-		// РЎС‡РёС‚С‹РІР°СЋ РІРІРµРґРµРЅРЅС‹Рµ С‡РёСЃР»Р° Рё РїРµСЂРµРґР°СЋ С‡РµСЂРµР· СЃРµС‚С‚РµСЂ
+		// Считываю введенные числа и передаю через сеттер
 		Scanner scan = new Scanner(System.in);	
-		Calculator firstNumber = new Calculator();	
-		System.out.print("Inser first number: ");
-		firstNumber.setFirst(int firstNumber = scan.nextInt());
+		Calculator calculatorOne = new Calculator();	
+		System.out.print("Input first number: " + calculatorOne.getFirst());
+		calculatorOne.setFirst(scan.nextInt());
 		
-		Calculator mathOperator = new Calculator();		
-		System.out.print("Enter the sign of the matematical operation: (+, -, *, /): ");		
-        mathOperator.setOperator(char mathOperator = scan.next().charAt(0));  
+		
+		System.out.print("Enter the sign of the matematical operation: (+, -, *, /): " + calculatorOne.getOperator());		
+        calculatorOne.setOperator(scan.next().charAt(0));  
 
-        Calculator secondNumber = new Calculator();      
-        System.out.print("Insert second number: ");
-		secondNumber.setSecond(int secondNumber = scan.nextInt());	
+        System.out.print("Insert second number: " + calculatorOne.getSecond());
+		calculatorOne.setSecond(scan.nextInt());
 
-		Calculator finish = new Calculator();
-		System.out.println("Result = " + finish.calculate());
+		System.out.println("Результаты подсчетов = " + calculatorOne.calculate());
 
 	}
 } 
