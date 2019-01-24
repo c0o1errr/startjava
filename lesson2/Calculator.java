@@ -2,38 +2,30 @@ public class Calculator {
 
 	private int first; 
 	private int second;
-	private double result;
+	private int result;
 	private char operator;
 
 	public int getFirst() {
 		return first;
 	}
 
-	public void setFirst(int first) {
-		if (first == 0) {
-			System.out.println("Result = 0");
-		}else{
-			this.first = first;
-		}
+	public void setFirst(int first) {	
+			this.first = first;		
 	}
 
 	public int getSecond() {
 		return second;
 	}
 
-	public void setSecond(int second) {
-		if(second == 0){
-			System.out.println("Result = 0");
-		}else{
-			this.second = second;
-		}
+	public void setSecond(int second) {		
+			this.second = second;		
 	}
 	
-	public double getResult() {
+	public int getResult() {
 		return result;
 	}
 
-	public void setResult(double result) {
+	public void setResult(int result) {
 		this.result = result;
 	}
 	
@@ -55,14 +47,13 @@ public class Calculator {
 						break;
 			case '*':	result = first * second;
 						break;
-			case '/':	result = first * second;
+			case '/':	result = first / second;
 						break;
-			case '^':	int result = 1;
-						for (int i = 0; i < second; i++) {
-						result *= first;
+			/*case '^':	for (int i = 0; i < second; i++){
+							result *= first;
+							break;*/
 			}
-			break;	
-			return result;		
-		}
-	}	
-}
+			return result;										
+		}		
+	}
+//}
