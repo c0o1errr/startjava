@@ -24,17 +24,13 @@ public class CalculatorTest {
 
 	private static void Start() {
 		Scanner scnr = new Scanner(System.in);
-		Calculator counts = new Calculator();
-    	
+		Calculator counts = new Calculator();    	
 		System.out.print("Input first number: " );
-		counts.setFirst(scnr.nextInt());	
-		
+		counts.setFirst(scnr.nextInt());		
 		System.out.print("Enter the sign of the matematical operation: (+, -, *, /, ^, % (остаток от деления)): ");
         counts.setOperator(scnr.next().charAt(0));
-
         System.out.print("Insert second number: " );
 		counts.setSecond(scnr.nextInt());
-
 		System.out.println("Counting results = " + counts.calculate());
 	}	
 }
