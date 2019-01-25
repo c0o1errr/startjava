@@ -4,6 +4,7 @@ public class Calculator {
 	private int second;
 	private int result;
 	private char operator;
+	private String again;
 
 	public int getFirst() {
 		return first;
@@ -39,21 +40,21 @@ public class Calculator {
 
 	public int calculate() {
 
-			switch(operator) {
+		switch(operator) {
 
-			case '+':	result = first + second;
+		case '+':	result = first + second;
 						break;
-			case '-':	result = first - second;
+		case '-':	result = first - second;
 						break;
-			case '*':	result = first * second;
+		case '*':	result = first * second;
 						break;
-			case '/':	result = first / second;
+		case '/':	result = first / second;
 						break;
-			/*case '^':	for (int i = 0; i < second; i++){
-							result *= first;
-							break;*/
-			}
-			return result;										
-		}		
+		case '%':   result = first % second;
+						break;
+		case '^':	result = (int)Math.pow(first, second);
+						break;																
+		}	
+		return result;	
 	}
-//}
+}
