@@ -43,17 +43,17 @@ public class Calculator {
 		switch(operator) {
 
 		case '+':	result = first + second;
-						break;
+					break;
 		case '-':	result = first - second;
-						break;
+					break;
 		case '*':	result = first * second;
-						break;
+					break;
 		case '/':	result = first / second;
-						break;
+					break;
 		case '%':   result = first % second;
-						break;
+					break;
 		case '^':	result = (int)Math.pow(first, second);
-						break;																
+					break;																
 		}	
 		return result;	
 	}
