@@ -6,19 +6,18 @@ public class CalculatorTest {
 		// I read the entered numbers and pass through the setter
 
 		Scanner scan = new Scanner(System.in);		
-		do {
-			Start();
-			System.out.println("Want to continue ? enter yes/no" );
-			String again = scan.nextLine();
+		do {				
+			System.out.println("Want to continue ? enter yes/no" );	
+			String again = scan.nextLine();			
 			if ("yes".equals(again)) {
-				Start();
+				start();				
 			} else {
 				System.out.println("Want to continue ? enter yes/no");
 			}
-		} while ( again != "no".equals(again));				
+		} while (false);				
 	}	
 
-	private static void Start() {
+	private static void start() {
 		Scanner scan = new Scanner(System.in);
 		Calculator calculate = new Calculator();    	
 		System.out.print("Input first number: " );
