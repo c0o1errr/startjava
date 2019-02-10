@@ -3,15 +3,14 @@ public class Calculator {
 	private int first; 
 	private int second;
 	private int result;
-	private char operator;
-	private String again;
+	private char operator;	
 
 	public int getFirst() {
 		return first;
 	}
 
 	public void setFirst(int first) {	
-			this.first = first;		
+		this.first = first;		
 	}
 
 	public int getSecond() {
@@ -19,7 +18,7 @@ public class Calculator {
 	}
 
 	public void setSecond(int second) {		
-			this.second = second;		
+		this.second = second;		
 	}
 	
 	public int getResult() {
