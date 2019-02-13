@@ -29,12 +29,12 @@ public class Jaeger {
 	}	
 	
 	public boolean drift() {
-		System.out.println("Р’С‹ РІРѕС€Р»Рё РІ РґСЂРёС„С‚ " );
+		System.out.println("Вы вошли в дриф " );
 		return true;
 	}
 
 	void move() {
-		System.out.println("РџСЂРѕС€РµР» 5 С€Р°РіРѕРІ " );
+		System.out.println("Вы прошли 5 шагов " );
 	}
 	void useVortex() {
 	}
