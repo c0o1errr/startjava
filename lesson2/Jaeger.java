@@ -1,67 +1,40 @@
-public class Jaeger{
-	private String modelNameOne = "Matador Fury";
-	private String markOne = "Mark-3";
-	private String originOne = "Mexico";
-	private String modelNameTwo = "Chrome Brutus";
-	private String markTwo = "Mark-3";
-	private String originTwo = "Canada";	
-
+public class Jaeger {
+	String modelName;
+	String mark;
+	String origin;
 	
-	public String getModelNameOne() {
-		return modelNameOne;
+	
+	public String getModelName() {
+		return modelName;
 	}
 
-	void setModelNameOne (String modelNameOne) {
-		this.modelNameOne = modelNameOne;		
+	void setModelName(String modelName) {
+		this.modelName = modelName;		
 	}
 
-	public String getMarkOne() {
-		return markOne;
+	public String getMark() {
+		return mark;
 	} 
 
-	public void setMarkOne(String markOne) {
-		this.markOne = markOne;
+	public void setMark(String mark) {
+		this.mark = mark;
 	}
 
-	public String getOriginOne() {
-		return originOne;
+	public String getOrigin() {
+		return origin;
 	}
 
-	public void setOriginOne(String originOne) {
-		this.originOne = originOne;
-	}
-		
-	public String getModelNameTwo() {
-		return modelNameTwo;
-	}
-
-	void setModelNameTwo (String modelNameTwo) {
-		this.modelNameTwo = modelNameTwo;
-	}
-
-	public String getMarkTwo() {
-		return markTwo;
-	} 
-
-	public void setMarkTwo(String markTwo) {
-		this.markTwo = markTwo;
-	}
-
-	public String getOriginTwo() {
-		return originTwo;
-	}
-
-	public void setOrigiTwon(String originTwo) {
-		this.originTwo = originTwo;
-	}
+	public void setOrigin(String origin) {
+		this.origin = origin;
+	}	
 	
 	public boolean drift() {
-		System.out.println("Вы вошли в дрифт " );
+		System.out.println("Р’С‹ РІРѕС€Р»Рё РІ РґСЂРёС„С‚ " );
 		return true;
 	}
 
 	void move() {
-		System.out.println("Вы прошли 5 шагов " );
+		System.out.println("РџСЂРѕС€РµР» 5 С€Р°РіРѕРІ " );
 	}
 	void useVortex() {
 	}
