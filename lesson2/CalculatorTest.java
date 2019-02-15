@@ -1,24 +1,22 @@
 import java.util.Scanner;
 
-public class CalculatorTest {
-	
+public class CalculatorTest {	
+	public final static Scanner scan = new Scanner(System.in);
 	public static void main (String [] args) {
 		// I read the entered numbers and pass through the setter
-
-		Scanner scan = new Scanner(System.in);		
-		do {				
-			System.out.println("Want to continue ? enter yes/no" );	
-			String again = scan.nextLine();			
-			if ("yes".equals(again)) {
-				start();				
-			} else {
+		start();	
+		String again = "";	
+		do {							
+			String repeat = scan.nextLine();			
+			if ("yes".equals(repeat)) {
+				start();							
+			} else { 
 				System.out.println("Want to continue ? enter yes/no");
 			}
-		} while (false);				
+		} while (again == "no");				
 	}	
 
-	private static void start() {
-		Scanner scan = new Scanner(System.in);
+	private static void start() {		
 		Calculator calculate = new Calculator();    	
 		System.out.print("Input first number: " );
 		calculate.setFirst(scan.nextInt());		
@@ -27,5 +25,5 @@ public class CalculatorTest {
         	System.out.print("Insert second number: " );
 		calculate.setSecond(scan.nextInt());
 		System.out.println("Counting results = " + calculate.calculate());
-	}	
+	}		
 }
