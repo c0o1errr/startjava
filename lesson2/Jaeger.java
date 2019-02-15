@@ -1,7 +1,7 @@
 public class Jaeger {
-	String modelName;
-	String mark;
-	String origin;
+	private String modelName;
+	private String mark;
+	private String origin;
 	
 	
 	public String getModelName() {
