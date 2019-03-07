@@ -1,17 +1,13 @@
 import java.util.Scanner;
 
 public class GuessNumber {
-    private int numberPlayerOne;
-    private int numberPlayerTwo;
+	// Генерация случайно числа компьютером
+	public int randomize() {
+		int minRnd = 0; // начальное значение диапазона
+		int maxRnd = 100; // конечное значение диапазона
+		int random = minRnd+(int)(Math.random()*maxRnd);
 
-    // Генерация случайно числа компьютером 
-    public int randomize() {
-    		int minRnd = 0; // начальное значение диапазона
-			int maxRnd = 100; // конечное значение диапазона
-			int random = minRnd+(int)(Math.random()*maxRnd);
-      	System.out.println(numberPlayerOne);
-      	System.out.println(numberPlayerTwo);
-      	do {
+		do {
 			if (number.getNumber() > random) {
 				System.out.println("The player entered the number more ");
 			} else {
@@ -19,13 +15,17 @@ public class GuessNumber {
 			}
 		} while (number.getNumber() != random);
 		System.out.println("You guessed ");
-        
-        return 0;
-    }
-   // Ввод чисел
-    public void filling() {
-    		Scanner sc = new Scanner(System.in);
-      	numberPlayerOne = sc.nextInt();
-      	numberPlayerTwo = sc.nextInt();
-    }
+	}
+	// Ввод чисел
+	public filling() {	
+		Scanner sc = new Scanner(System.in);	
+		Player numberPlayerOne = new Player();		
+		System.out.println("The first player enters the number ");
+		int numberPlayerOne = sc.nextInt();	
+		playerOne.setNumber(numberPlayerOne);
+		Player numberPlayerTwo = new Player();
+		System.out.println("The second player enters the number ");
+		int numberPlayerTwo = sc.nextInt();
+		playerTwo.setNumber(numberPlayerTwo);		
+	}
 }
