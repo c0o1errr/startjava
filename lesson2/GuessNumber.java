@@ -1,17 +1,31 @@
-public class GuessNumber {
-	// Генерация случайно числа компьютером
-	public int randomize() {
-		int a = 0; // начальное значение диапозона
-		int b = 100; // конечное значение диапозона
-		int random = a+(int)(Math.random()*b);
-		
-		do {
-			if (number > random) {
-				System.out.println("Игрок ввел число больше ");
-			} esle {
-				System.out.println("Игрок ввел число меньше ");
-			}
+import java.util.Scanner;
 
-		} while (number != random)
-	}
+public class GuessNumber {
+    private int numberPlayerOne;
+    private int numberPlayerTwo;
+
+    // Р“РµРЅРµСЂР°С†РёСЏ СЃР»СѓС‡Р°Р№РЅРѕ С‡РёСЃР»Р° РєРѕРјРїСЊСЋС‚РµСЂРѕРј 
+    public int randomize() {
+    		int minRnd = 0; // РЅР°С‡Р°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РґРёР°РїР°Р·РѕРЅР°
+			int maxRnd = 100; // РєРѕРЅРµС‡РЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РґРёР°РїР°Р·РѕРЅР°
+			int random = minRnd+(int)(Math.random()*maxRnd);
+      	System.out.println(numberPlayerOne);
+      	System.out.println(numberPlayerTwo);
+      	do {
+			if (number.getNumber() > random) {
+				System.out.println("The player entered the number more ");
+			} else {
+				System.out.println("The player entered a number less ");
+			}
+		} while (number.getNumber() != random);
+		System.out.println("You guessed ");
+        
+        return 0;
+    }
+   // Р’РІРѕРґ С‡РёСЃРµР»
+    public void filling() {
+    		Scanner sc = new Scanner(System.in);
+      	numberPlayerOne = sc.nextInt();
+      	numberPlayerTwo = sc.nextInt();
+    }
 }
