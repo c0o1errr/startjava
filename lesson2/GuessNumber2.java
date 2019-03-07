@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class GuessNumber {
 	public static final Scanner sc = new Scanner(System.in);
-	// Генерация случайно числа компьютером
+	// Randomly generated computer numbers
 	public int randomize() {
-		int minRnd = 0; // начальное значение диапазона
-		int maxRnd = 100; // конечное значение диапазона
+		int minRnd = 0; // initial value of the range
+		int maxRnd = 100; // range end value
 		int random = minRnd+(int)(Math.random()*maxRnd);
 
 		while (true) {
