@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class CalculatorTest {
 	public static final Scanner scan = new Scanner(System.in);
-	public static final String again = scan.nextLine();
 	public static void main (String [] args) {
 		// I read the entered numbers and pass through the setter
 		do {	
