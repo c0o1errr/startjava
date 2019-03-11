@@ -2,30 +2,20 @@ import java.util.Scanner;
 
 public class GuessNumberTest {
 	public static final Scanner sc = new Scanner(System.in);
-	public static void main (String [] args) {
-		
-		//GuessNumber 
-
+	public static void main(String [] args) {
+		System.out.println("Before you game GUESS NUMBER !!! ");
+		System.out.println("Two players are playing. ");
+		System.out.println("You need to enter a number from 1 to 100, who first guessed the one and won. ");
+		System.out.println("First, enter player names. ");
+		naming();
+		GuessNumber start = new GuessNumber();
+		start.randomize();		
 	}			
 		// Имена игроков
-		private void name() {			
-			Player playerOne = new Player();
-			Player playerTwo = new Player();
-			System.out.println("Введите имя первого игрока ");
-			String nameOne = sc.nextLine();
-			playerOne.setName(nameOne);			
-			System.out.println("Введите имя второго игрока ");
-			String nameTwo = sc.nextLine();
-			playerTwo.setName(nameTwo);
-		}		
-		private void number() {			
-			Player playerOne = new Player();
-			Player playerTwo = new Player();
-			System.out.println("Первый игрок вводит число ");
-			int numberPlayerOne = sc.nextInt();
-			playerOne.setNumber(numberPlayerOne);
-			System.out.println("Второй игрок вводит число ");
-			int numberPlayerTwo = sc.nextInt();
-			playerTwo.setNumber(numberPlayerTwo);
-		}
+	private static void naming() {		
+		System.out.println("Enter the first players name ");
+		Player playerOne = new Player(sc.nextLine());				
+		System.out.println("Enter the second players name ");
+		Player playerTwo = new Player(sc.nextLine());
+	}			
 } 
