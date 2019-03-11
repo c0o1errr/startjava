@@ -1,18 +1,16 @@
 import java.util.Scanner;
 
-public class GuessNumber2 {
+public class GuessNumber {
 	public static final Scanner sc = new Scanner(System.in);
 	// Randomly generated computer numbers
 	public int randomize() {
 		int minRnd = 0; // initial value of the range
 		int maxRnd = 100; // range end value
-		int random = minRnd+(int)(Math.random()*maxRnd);
+		int random = minRnd+(int)(Math.random()*maxRnd);	
 
 		while (true) {
-			Player numberPlayerOne = new Player();
 			System.out.println("The first player enters the number: ");
-			int numberPlayerOne = sc.nextInt();
-			Player numberPlayerTwo = new Player();
+			int numberPlayerOne = sc.nextInt();		
 			System.out.println("The second player enters the number: ");
 			int numberPlayerTwo = sc.nextInt();
 
@@ -34,6 +32,7 @@ public class GuessNumber2 {
 			} if (numberPlayerTwo > random) {
 				System.out.println("The number is greater than the guess ");
 			}
-		}		
+		}
+		return random;	
 	}
-}
+} 
