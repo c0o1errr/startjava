@@ -1,12 +1,15 @@
+package com.startjava.lesson_2_3.game;
+
 import java.util.Scanner;
 
 public class GuessNumber {
 	public static final Scanner sc = new Scanner(System.in);
-	// Randomly generated computer numbers
-	public int randomize() {
+	// The process of guessing
+	public int guess() {
+
 		int minRnd = 0; // initial value of the range
 		int maxRnd = 100; // range end value
-		int random = minRnd+(int)(Math.random()*maxRnd);	
+		int random = minRnd+(int)(Math.random()*maxRnd);
 
 		while (true) {
 			System.out.println("The first player enters the number: ");
@@ -31,8 +34,9 @@ public class GuessNumber {
 				System.out.println("The number is greater than the guess ");
 			} if (numberPlayerTwo > random) {
 				System.out.println("The number is greater than the guess ");
-			}
-		}
-		return random;	
-	}
+			}			
+		}	
+		System.out.println("Want to continue ? enter yes/no" );
+		return random;			
+	}	
 } 

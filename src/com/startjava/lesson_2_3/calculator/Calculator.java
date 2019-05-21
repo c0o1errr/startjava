@@ -1,5 +1,6 @@
-public class Calculator {
+package com.startjava.lesson_2_3.calculator;
 
+public class Calculator {	
 	private int first; 
 	private int second;
 	private int result;
@@ -55,5 +56,6 @@ public class Calculator {
 				break;																
 		}	
 		return result;	
-	}
+	}	
+	
 }

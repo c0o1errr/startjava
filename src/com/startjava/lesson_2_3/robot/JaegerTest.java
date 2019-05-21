@@ -1,3 +1,4 @@
+package com.startjava.lesson_2_3.robot;
 import java.util.Scanner; 
 
 public class JaegerTest {

@@ -1,3 +1,5 @@
+package com.startjava.lesson_2_3.calculator;
+
 import java.util.Scanner;
 
 public class CalculatorTest {
@@ -8,6 +10,7 @@ public class CalculatorTest {
 			start();
 			String again = scan.nextLine();
 			if ("no".equals(again)) {
+				System.out.println("Calculator closed!!!");
 				break;				
 			} 
 		} while (true);				
